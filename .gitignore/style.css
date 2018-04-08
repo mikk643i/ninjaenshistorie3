@@ -1,0 +1,99 @@
+font-family: 'Roboto Slab',
+serif;
+
+
+nav {
+    display: block white-space: nowrap;
+}
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    Color: #000;
+    text-decoration: none;
+
+}
+
+nav a:first-child {
+    margin-left: 2;
+}
+
+nav a:hover {
+    opacity: 0.25;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+#scene {
+    width: 100%;
+    height 56.25vw;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#baggrund {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(Mikkel_Ninja_baggrund-responsive.svg);
+    background-size: 100%;
+
+}
+
+#ninja {
+    width: 45vw;
+    height: 22vw;
+    background-image: url(Mikkel_Ninja_figur_god.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 4vw;
+    left: 18vw;
+    animation-name: ungninja;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+
+}
+
+#sensei {
+    width: 45vw;
+    height: 22vw;
+    background-image: url(Mikkel_Ninja_ond2.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 1.8vw;
+    left: 40vw;
+    animation-name: sensei;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}
+
+
+
+#styletile {
+    width 100%;
+    background-image: url(styletile.svg);
+}
+
+@keyframes ungninja ( 0% {
+    transform: translate(50vw);
+
+    100% {
+        transform: translate(100vw);
+    }
+    ) @keyframes sensei ( 0% {
+        transform: translate(50vw);
+
+        100% {
+            transform: translate(100vw);
+        }
+        )
